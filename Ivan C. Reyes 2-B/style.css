@@ -1,0 +1,317 @@
+body {
+  background-size: cover;
+  margin:0;
+  font-family: 'ubuntu', sans-serif;
+}
+
+.headings{
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 150px;
+  /*background: -webkit-linear-gradient(#FF0000, #0000FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+ 
+/*****Layout*****/
+
+.container{
+  width:90%;
+  max-width:900px;
+  margin: 0 auto;
+  
+  
+}
+
+.container-nav{
+  display:flex;
+  justify-content:space-between;
+
+}
+
+header{
+  background-color: black;
+  padding: 2em 0;
+}
+
+@media (max-width:675px){
+  .container-nav{
+    flex-direction:column;
+  }
+  header{
+    text-align:center;
+  }
+}
+
+
+
+
+/******NAVIGATION BAR******/
+nav ul{
+  list-style:none;
+  display:flex;
+  padding:0;
+  justify-content: center ;
+}
+
+.container-nav{
+  display:flex;
+  justify-content:space-between;
+
+}
+
+nav li{
+  margin:0 1em;
+  
+
+}
+
+nav a{
+  text-decoration: none;
+  color:#ffff;
+  font-weight:700;
+  padding:.25em 0;
+
+}
+
+/*nav a:hover,
+nav a:focus{
+  background-color: white;
+  color: black;
+  padding: 17px;
+  border-radius: 10px;
+
+}*/
+
+header{
+  background-color: black;
+  color: white;
+  padding: 1em 0;
+}
+
+.container{
+  width:90%;
+  max-width:900px;
+  margin: 0 auto;
+  
+  
+}
+
+@media (max-width:675px){
+  .container-nav{
+    flex-direction:column;
+  }
+  header{
+    text-align:center;
+  }
+}
+
+/*****Typography*****/
+
+h1{
+  font-family:'Lora', serif;
+  font-weight: 400;
+  color:#fffff;
+  font-size:2rem;
+  margin:0;
+}
+
+.subtitle{
+  font-weight:700;
+  color:#fffff;
+  font-size: 1rem;
+  margin:0;
+  text-align:center;
+  
+
+}
+
+.active{
+  background-color: white;
+  color: black;
+  padding: 17px;
+  border-radius: 10px;
+}
+
+.question{
+  padding: 100px;
+  width: 1000px;
+  height: 250px;
+  /*border: 1px solid blue;*/
+  float: left;
+  margin-left: 10px;}
+
+.questiontwo{
+  padding-left: 150px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+  padding-top: 70px;
+  width: 1000px;
+  height: 250px;
+  float: right;
+  margin-right: 10px;
+
+}
+
+.questionthree{
+  padding-left: 150px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+  padding-top: 70px;
+  width: 1000px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+
+}
+
+
+
+.peopleUnity{
+  width: 300px;
+  height: 300px;
+  float: right;
+  padding-left: 100px;
+}
+
+.handunity{
+  width: 300px;
+  height: 300px;
+  float: left;
+  padding-right: 50px;
+}
+
+/*.scroll {  
+    
+    background-size: 100%;
+}*/
+section{
+  background: url('image/cartoon.jpg') no-repeat;
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.jigsaw{
+  width: 300px;
+  height: 300px;
+  float: left;
+  padding-right: 50px;
+}
+
+
+.headUnity{
+  margin: auto;
+  text-align: center;
+}
+
+.blockquote{
+  max-width: 600px;
+  margin: 10px 30px;
+  padding: 50px;
+  background: #f8fffe;
+  border: 1px solid #b0d2cb;
+  color: #0b4237;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.blockquote__text{
+  font-family: 'Gelasio', serif;
+  font-size: 1.75em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.blockquote__text:not(:last-child){
+  margin-bottom: 1em;
+}
+
+.blockquote--bordered{
+  border-left-width: 10px;
+}
+
+.blockquote__text--credit{
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+.blockquote__text--credit::before {
+  content: "\2014\0020";
+}
+
+.blockquote--quoted::before{
+  content: "\201c";
+  font-size: 70px;
+  color: #009578 ;
+  display: block;
+  margin-bottom: -40px;
+  margin-top: -20px;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 25px;
+}
+
+.heading h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #26455c;
+}
+
+.heading p{
+  color: #666;
+}
+
+.team{
+  width: 500px;
+  height: 500px;
+}
+
+.about-us{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+/*.about-us, .team{
+  flex:0 50%;
+  max-width: 50%;
+  height: auto;
+
+}*/
+
+.content{
+  padding: 35px;
+}
+
+.content h2{
+  color: #36455c;
+  font-size: 24px;
+  margin: 15px 0px;
+}
+
+.content p{
+  color: #666;
+  font-size:18px;
+  line-height: 1.5;
+  margin: 15px 0px;
+}

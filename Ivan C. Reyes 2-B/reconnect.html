@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:480,700&display-swap"
+rel="stylesheet">
+	<title>Reconnect</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container container-nav">
+		<div class="site-title">
+			<h1 class= "unity"><u>Unity-Excellent</u></h1>
+			<p class="subtitle">RECONNECT</p>
+		</div>
+		<nav>
+			<ul><li><a href="home.html" class="home">Home</a></li>
+			<li><a href="reconnect.html" class="reconnect"><span class="active">Recconect</span></a></li> <!--Eexplain how "theme of the technoday is important"-->
+			<li><a href="gallery.html" class="gallery">Gallery</a></li> <!--picture about reconnecting blah,blah-->
+			<li><a href="quotes.html" class="qoutes">Quotes</a></li>	<!--qoutes about unity, reconnecting, excellence of reconnecting-->
+			<li><a href="about.html" class="about">About</a></li>	<!--My info or bakit ko ginawa tong unity page na to-->
+			</ul>
+		</nav>
+		</div>
+	</header>
+
+	<section class="scroll">
+  		<h1 class="scrolltwo">Scroll Down &#8595;</h1>
+	</section>
+	<div class="question reveal">
+		<img src="image/peopleUnity.jpg" class="peopleUnity">
+		<div class="flex">
+			<h2>Why Reconnecting to other people is important?</h2>
+			<p>As social beings, humans have an innate need for connection with others. Reconnecting with others can provide a sense of belonging, reduce feelings of loneliness and isolation, and improve overall well-being.Reconnecting with others can have a positive impact on various aspects of your life, including your social, emotional, and mental well-being.</p>
+		</div>
+	</div>
+
+	<div class="questiontwo reveal">
+		<img src="image/handunity.jpg" class="handunity">
+		<div class="flex">
+			<h2>How can embracing change through unity and excellence facilitate the process of reconnecting with others?</h2>
+			<p>Embracing change through unity and excellence can facilitate the process of reconnecting with others in several ways. Firstly, it promotes a positive mindset towards change, which can help to reduce any anxiety or resistance to reconnecting. Secondly, it fosters a sense of collaboration and teamwork, which can help to build stronger relationships with others. Thirdly, it encourages excellence in one's personal and professional life, which can make you more attractive to others as a potential connection. Overall, embracing change through unity and excellence can create a more welcoming and supportive environment for reconnecting with others.</p>
+		</div>
+	</div>
+
+	<div class="questionthree reveal">
+		<img src="image/pieces-white-jigsaw-wood.jpg" class="jigsaw">
+		<div class="flex">
+			<h2>Can reconnecting with other people can lead unity and excellence?</h2>
+			<p>Yes, reconnecting with other people can lead to unity and excellence. When people reconnect with each other, they are able to build stronger relationships based on shared experiences, common interests, and mutual goals. This can create a sense of unity and teamwork that can help individuals achieve excellence in their personal and professional lives.</p>
+		</div>
+	</div>
+
+<script>
+		function reveal() {
+	  var reveals = document.querySelectorAll(".reveal");
+
+	  for (var i = 0; i < reveals.length; i++) {
+	    var windowHeight = window.innerHeight;
+	    var elementTop = reveals[i].getBoundingClientRect().top;
+	    var elementVisible = 150;
+
+	    if (elementTop < windowHeight - elementVisible) {
+	      reveals[i].classList.add("active");
+	    } else {
+	      reveals[i].classList.remove("active");
+	    }
+	  }
+	}
+
+	window.addEventListener("scroll", reveal);
+</script>
+</body>
+</html>
